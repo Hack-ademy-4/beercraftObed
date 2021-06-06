@@ -11,10 +11,13 @@
                         <a class="nav-link active" aria-current="page" href="{{'inicio'}}">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{'cervezas'}}">CERVEZAS</a>
+                        <a class="nav-link" href="{{'cervecerias'}}">CERVECERIAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PRODUCTORES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CERVEZAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>

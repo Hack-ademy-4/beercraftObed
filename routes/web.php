@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, "inicio"])->name("inicio");
 Route::get('/inicio', [HomeController::class, "inicio"])->name("inicio");
-Route::get('cervezas', [BreweryController::class, "todas"])->name("cervezas");
+Route::get('cervecerias', [BreweryController::class, "todas"])->name("cervecerias");
 
 
