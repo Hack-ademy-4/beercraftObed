@@ -1,0 +1,51 @@
+body,
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+label {
+    font-family: 'Oswald', sans-serif;
+}
+
+.headerbg {
+    background-image: url("https://revistasumma.com/wp-content/uploads/2015/02/Craft-Beer.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.headerimg {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.delimaster.cl%2Fblog%2Fwp-content%2Fuploads%2F2016%2F01%2Fcervezas-reasonwhy.es_-1440x564_c.jpg&f=1&nofb=1");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.bgnav {
+    background-color: white !important;
+}
+
+.card {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+
