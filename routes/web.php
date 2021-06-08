@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, "inicio"])->name("inicio");
-Route::get('/inicio', [HomeController::class, "inicio"])->name("inicio");
 Route::get('/contacto', [HomeController::class, "contacto"])->name("contacto");
 Route::post('/contacto', [HomeController::class, "nuevoContacto"])->name("contacto_nuevo");
 
 Route::get('/cervecerias', [BreweryController::class, "todas"])->name("cervecerias");
+Route::get('/detalles', [BreweryController::class, "detallesCerveceria"])->name("detallesCerveceria");

@@ -1,7 +1,8 @@
 @extends('layouts.app')
-@section('content')
-@include('layouts._header')
 
+@section('content')
+
+@include('layouts._header')
 
 <div class="container">
     <div class="row">
@@ -9,7 +10,7 @@
             <h2 class="text-center py-3">CONTACTO</h2>
             <h5 class="text-center">No dudes en contactar con nosotros y comentarnos todo lo que quieras.</h5>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-6 px-5">
                 <form action="{{route('contacto_nuevo')}}" method="POST" class="py-3">
                     @csrf
@@ -37,13 +38,8 @@
                     <button type="submit" class="btn btn-outline-dark mb-4">Enviar</button>
                 </form>
             </div>
-            <div class="col-lg-6">
-            </div>
         </div>
     </div>
 </div>
-
-
-
 
 @endsection

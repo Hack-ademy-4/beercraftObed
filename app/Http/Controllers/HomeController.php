@@ -9,7 +9,8 @@ class HomeController extends Controller
     public function inicio()
     {
         $title = "Bienvenidos a Beercraft";
-        return view("welcome");
+        $color = "green";
+        return view("welcome", compact("title", "color"));
     }
 
     public function contacto()
