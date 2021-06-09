@@ -45,8 +45,8 @@
             </div>
             </a>
             <div class="pt-4">
-                <h5>CORONA</h5>
-                <h6>3€</h6>
+                <h5>{{$cerveza['nombre']}}</h5>
+                <h6>{{$cerveza['precio']}}</h6>
             </div>
         </div>
         <!-- Card -->

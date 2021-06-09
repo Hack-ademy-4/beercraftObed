@@ -21,3 +21,7 @@ Route::post('/contacto', [HomeController::class, "nuevoContacto"])->name("contac
 
 Route::get('/cervecerias', [BreweryController::class, "todas"])->name("cervecerias");
 Route::get('/detalles', [BreweryController::class, "detallesCerveceria"])->name("detallesCerveceria");
+
+
+Route::post('/nueva_cerveceria',[BreweryController::class,'create'])->name("nueva_Cerveceria");
+Route::get('/nueva_cerveceria',[BreweryController::class,'nuevaCerveceria'])->name("agregarCerveceria");

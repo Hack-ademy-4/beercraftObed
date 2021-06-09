@@ -20,7 +20,7 @@
                     CERVEZAS
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    @foreach ($cervezas as $cerveza )
+                    @foreach ($navCervezas as $cerveza )
                     <li><a class="dropdown-item" href="#">{{$cerveza}}</a></li>
                         <li>
                     @endforeach     

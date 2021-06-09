@@ -41,9 +41,8 @@ class BreweryController extends Controller
 
   public function detallesCerveceria()
   {
-    $cervezas = ["CORONITA", "PACIFICO", "SOL", "LEÓN"];
-
-      /* [
+    $cervezas =[
+     [
         "nombre" => "Coronita",
         "informacion" => "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         "precio" => "3€"
@@ -64,11 +63,27 @@ class BreweryController extends Controller
         "precio" => "3.30€"
       ]
 
-    ]; */
+    ];
 
      $title = "TU PRÓXIMA CERVECERIAS FAVORIA";
 
 
     return view("detalles", compact("cervezas", "title"));
+  }
+
+  public function nuevaCerveceria()
+  {
+    return view("form_cerveceria");
+  }
+
+  public function create(Request $request)
+  {
+    $validación = $request->validate([
+      'name' => 'required|max:60|min:3',
+      'description' => 'required|max:350|min:3',
+      'capacity' => 'required'
+      ]);
+      
+      return redirect()->route("inicio");
   }
 }

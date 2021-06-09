@@ -15,12 +15,18 @@ label {
     font-family: 'Oswald', sans-serif;
 }
 
-.headerbg {
-    background-image: url("https://revistasumma.com/wp-content/uploads/2015/02/Craft-Beer.jpg");
+.headerinicio {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://revistasumma.com/wp-content/uploads/2015/02/Craft-Beer.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
+    
 }
 
 .headerimg {
