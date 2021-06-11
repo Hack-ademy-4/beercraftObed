@@ -15,9 +15,9 @@
                 <form action="{{route('contacto_nuevo')}}" method="POST" class="py-3">
                     @csrf
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required value="{{ old('nombre') }}">
-                        @error('nombre')
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required value="{{ old('name') }}">
+                        @error('name')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
@@ -29,9 +29,9 @@
                         @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" name="mensaje" id="mensaje" rows="5">{{ old('mensaje') }}</textarea>
-                        @error('mensaje')
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="message" id="message" rows="5">{{ old('message') }}</textarea>
+                        @error('message')
                         <div class="alert alert-danger">{{$message}}</div>
                         @enderror
                     </div>

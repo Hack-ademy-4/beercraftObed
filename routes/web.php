@@ -19,9 +19,14 @@ Route::get('/', [HomeController::class, "inicio"])->name("inicio");
 Route::get('/contacto', [HomeController::class, "contacto"])->name("contacto");
 Route::post('/contacto', [HomeController::class, "nuevoContacto"])->name("contacto_nuevo");
 
-Route::get('/cervecerias', [BreweryController::class, "todas"])->name("cervecerias");
-Route::get('/detalles', [BreweryController::class, "detallesCerveceria"])->name("detallesCerveceria");
+Route::get('/cervecerias', [BreweryController::class, "index"])->name("cervecerias");
+Route::get('/cerveceria/{id}', [BreweryController::class, "show"])->name("detallesCerveceria");
 
-
-Route::post('/nueva_cerveceria',[BreweryController::class,'create'])->name("nueva_Cerveceria");
 Route::get('/nueva_cerveceria',[BreweryController::class,'nuevaCerveceria'])->name("agregarCerveceria");
+Route::post('/nueva_cerveceria',[BreweryController::class,'create'])->name("create.cerveceria");
+
+Route::get('/cerveceria/{id}/edit',[BreweryController::class,'edit'])->name("edit.cerveceria");
+Route::put('/cerveceria/{id}',[BreweryController::class,'update'])->name("update.cerveceria");
+
+Route::delete('/cerveceria/{id}',[BreweryController::class,'destroy'])->name("delete.cerveceria");
+

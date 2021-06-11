@@ -12,7 +12,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-6 px-5">
-                <form action="{{route('nueva_Cerveceria')}}" method="POST" class="py-3">
+                <form action="{{route('create.cerveceria')}}" method="POST" class="py-3">
                     @csrf
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre de la cervecería</label>

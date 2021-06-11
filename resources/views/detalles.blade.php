@@ -14,14 +14,14 @@
         </div>
         <div class="col-md-6">
 
-            <h2>Old Town</h2>
-            <p class="mb-2 text-muted text-uppercase small">1323 RESEÑAS</p>
+            <h2>{{$cerveceria->name}}</h2>
+            <p class="mb-2 text-muted text-uppercase small">AFORO {{$cerveceria->capacity}} PERSONAS</p>
             <p><span class="mr-1"><strong>C/BLANCO, 75, BARCELONA</strong></span></p>
             <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit
                 error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio,
                 officia quis dolore quos sapiente tempore alias.</p>
 
-            <button class="btn btn-outline-dark mb-4">RESERVAR</button>
+                <a class="btn btn-outline-dark mb-4" href="{{route('edit.cerveceria', ['id'=>$cerveceria->id])}}">EDITAR</a>
         </div>
     </div>
     </div>
