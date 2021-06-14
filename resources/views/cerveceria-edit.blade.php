@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('layouts._header')
 
 <div class="container py-5">
     <div class="row text-center py-3">

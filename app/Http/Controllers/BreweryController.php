@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brewery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BreweryController extends Controller
 {
@@ -62,6 +63,7 @@ class BreweryController extends Controller
       $cerveceria->name = $validación['name'];
       $cerveceria->description = $validación['description'];
       $cerveceria->capacity = $validación['capacity'];
+      
       $cerveceria->save();
 
       return redirect()->route("cervecerias");
@@ -70,6 +72,9 @@ class BreweryController extends Controller
 
   public function nuevaCerveceria()
   {
+    if (!Auth::user()) {
+      return redirect ('login');
+    }
     return view("form_cerveceria");
   }
 

@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /* View::share('navCervezas', ["CORONITA", "ESTRELLA", "SAN MIGUEL", "PACÍFICO"]); */
+        View::share('navCervezas', ["CORONITA", "ESTRELLA", "SAN MIGUEL", "PACÍFICO"]);
     }
 }

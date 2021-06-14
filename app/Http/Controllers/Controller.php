@@ -14,6 +14,6 @@ class Controller extends BaseController
 
     public function __construct()
     {
-        View::share('navCervezas', ["CORONITA", "ESTRELLA", "SAN MIGUEL", "PACÍFICO"]);
+        
     }
 }
